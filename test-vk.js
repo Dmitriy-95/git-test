@@ -4,14 +4,24 @@ module.exports = {
     client
       .url('https://vk.com/')
       .pause(1000)
+      .waitForElementVisible('body', 2000)
+      .click('.top_home_link')
+      .pause(1000)
       .waitForElementVisible('body', 1000)
-      .waitForElementVisible('#index_email', 1000)
+      .click('#index_email')
       .setValue('#index_email', 'test')
-      .waitForElementVisible('#index_pass', 5000)
       .click('#index_pass')
       .setValue('#index_pass', 'test')
+      .click('#index_expire')
       .click('#index_login_button')
+      .pause(3000)
+      .waitForElementVisible('body', 2000)
+      .click('.top_home_link')
       .pause(5000)
+
+
+
+
       .end();
   }
 };
