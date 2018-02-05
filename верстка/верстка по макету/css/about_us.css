@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+
+body{
+    width: 100%;
+    background: url(../img/Noise.png);
+    margin: 0;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+a{text-decoration: none;}
+ul{margin: 0; padding: 0; list-style: none;}
+
+.wriper{
+    width: 840px;
+    height: 1230px;
+    margin: 0 auto;
+    padding:0 150px;
+    border-top: 5px solid #7e7e7e;
+    
+}
+/*            СТИЛИ ДЛЯ TOP*/
+
+.top{
+    padding: 30px 0 20px 0;
+}
+
+.search{
+    float: right;
+}
+
+.search input[type="submit"]{
+    margin: 0;
+    width:40px;
+    height:30px;
+    background: #29c5e6;
+    color: #fff;
+    border: 0;
+}
+
+.search input[type="text"]{
+    margin: 0;
+    padding-left: 10px;
+    width: 160px;
+    height: 28px;
+    background: #f3f3f3;
+    color: #b2b2b2;
+    border: 1px solid #e7e7e7;
+}
+/*            меню */
+.menu{
+    width: 840px;
+    height: 40px;
+    text-align: center;
+    background: #f3f3f3;
+    border: 1px solid #cccccc;
+}
+
+.menu li{
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+}
+
+.menu a{
+    width: 116px;
+    height: 31px;
+    color: #b2b2b2;
+    display:inline-block;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+/*анимация меню*/
+.menu a:hover{
+    background: #29c5e6;
+    color: #ffffff;
+}
+
+/*            main блок*/
+
+.page_title{
+    background:url(../img/Title pattern.png);
+    padding-left: 20px;
+    margin: 30px 0;
+}
+
+h1{
+    display: inline-block;
+    color: #7e7e7e;
+    font: 40px/40px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 10px;
+}
+
+/*                    левое меню*/
+.aside-menu li{
+    font-weight: 300;
+    list-style-type: square;
+    border-top: 1px solid #e7e7e7;
+    
+}
+.aside-menu li:first-child{border:none;}
+.aside-menu li:hover{
+    color: #29c5e6;
+}
+.aside-menu a{color: #8f8f8f;}
+
+.submenu {
+    width: 250px;
+}
+.submenu img{
+    width: 230px;
+    height: 180px;
+}
+
+.submenu > h2{
+    background: #29c5e6;
+    font: 14px, sans-serif;
+    color: #fff;
+    padding: 10px;
+}
+
+.our_ofises{
+    float: right;
+    width: 580;
+    
+}
+
+blockquote{
+    margin: 0;
+    padding: 15px;
+    background: #29c5e6;
+    font: sans-serif;
+    font-weight: 300;
+    
+}
+
+blockquote p{
+    color: #fff;
+    font-size:30px ;
+    font-style: italic;
+    margin: 0;
+}
+
+blockquote cite{
+    display: block;
+    color: #1d8ea6;
+    font-style: normal;
+    margin: 0;
+    font-size: 20px;
+    text-align: right;
+}
+
+
+figure{
+    display: inline-block;
+    
+}
+
+figure img{
+    width: 320px;
+    height: 175px;
+    display: block;
+    border: 1px solid #fff;
+    outline: 1px solid #c9c9c9
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
