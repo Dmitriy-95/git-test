@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>progect_7_9</title>
+    <link rel="stylesheet" type="text/css" href="css/stuleGeme.css">
+    <script type="text/javascript" src="script/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="script/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        
+        function DrawBoard(){
+            
+        for(var j=0; j<8; j++) { 
+            
+            for(var i=0; i<8; i++){
+                
+                if (j%2 == 0 && i%2==0 || j%2!=0 && i%2!=0){
+                    
+                    $(".board").append('<div class="sv_kl"></div>');
+                }
+            else {
+                    $(".board").append('<div class="tm_kl"></div>');
+                 }
+            }
+        }
+        }
+        
+        function AddDraug(){
+            
+            $('div').filter('.tm_kl').slice(0,12).append("<img class='drag black' src='images/tem_shashka.gif'>");
+            
+            $('div').filter('.tm_kl').slice(20,33).append("<img class='drag white' src='images/sv_shashka.gif'>");
+            
+            
+            $('.drag').draggable({
+                snap: '.tm_kl, .tm_block, .sv_block ',
+//                containment: '.tm_kl',
+                revert: true
+            });
+            
+            $('.tm_kl').droppable({
+                accept: '.drag',
+                drop: move
+            });
+            
+    
+        
+        function move(event,ui){
+            
+            ui.draggable.draggable('option','revert','invalid');
+            
+        }
+            
+        $('.sv_block').droppable({
+           accept: '.white',
+            drop: dropWhite
+        });
+            
+        
+        function dropWhite(event,ui){
+            
+           var count = $('.counter_white').text();
+           var c = parseInt(count);
+           c+=1;
+           $('.counter_white').text(c);
+           ui.drag.draggable('option', 'revert', 'false');
+        }
+        
+        
+        $('.tm_block').droppable({
+           accept: '.black',
+            drop: dropBleack
+        });
+            
+        
+        function dropBleack(event,ui){
+            
+           var count = $('.counter_black').text();
+           var c = parseInt(count);
+           c+=1;
+           $('.counter_black').text(c);
+           ui.drag.draggable('option', 'revert', 'false');
+        }
+    }
+        
+    function restart(){
+        
+        $('.counter_black').text(0);
+        $('.counter_white').text(0);
+        $('.drag').remove();
+        $('.sv_kl, .tm_kl').remove();
+        DrawBoard();
+        AddDraug();
+        
+    }
+        
+    </script>
+</head>
+<body>
+    
+    <button  onclick="DrawBoard()" >показать доску</button>
+    <button  onclick="AddDraug()">рисуем шашки</button>
+    <button  onclick="restart()">Restart</button>
+        
+    <div class="board">
+        
+    </div>
+    
+    <div class="tm_block">для темных <p class="counter_black">0</p></div>
+    
+    <div class="sv_block">для светлых <p class="counter_white">0</p></div>
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
