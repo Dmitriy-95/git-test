@@ -1,0 +1,47 @@
+#click_block{
+    width: 200px;
+    height: 200px;
+    background: green;
+}
+
+#wripper{
+    width: 600px;
+    height: 900px ;
+    background: #a1a1a1 ;
+    border: 1px yellow;
+}
+
+
+#second_block{
+    width: 200px;
+    height: 200px;
+    background: #1af4b7;
+}
+
+#drigHelp{
+    width: 200px;
+    height: 200px;
+    background: red;
+}
+
+#right_block{
+    width: 200px;
+    height: 200px;
+    border: 2px red solid;
+    margin-left: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

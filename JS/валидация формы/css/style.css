@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- GENERAL ---------- */
+
+body {
+	background: url(../images/bg.png) repeat;
+	color: #999;
+	font: 16pt sans-serif;
+	margin: 0;
+}
+
+.wripper{
+    
+}
+
+h1 { margin: 0; }
+
+h6 { margin: 5px; }
+
+a {
+	color: #999;
+	text-decoration: none;
+}
+
+a:hover { color: #1dabb8; }
+
+fieldset {
+	border: none;
+	margin: auto;
+	
+}
+
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	margin: 0;
+	outline: none;
+	-webkit-appearance: none;
+}
+
+input[type="submit"] { cursor: pointer; }
+
+.form-container {
+	padding-left: 20px;
+}
+
+.tip {
+	color: #FF5454;
+	font: 16px sans-serif;
+	font-weight: bold;
+} 
+
+#login-form {
+	margin: 50px auto;
+	width: 500px;
+}
+
+#login-form h1 {
+	background-color: #282830;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	font-size: 14px;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#login-form fieldset {
+	background: #fff;
+	border-radius: 0 0 5px 5px;
+	padding: 20px;
+	position: relative;
+}
+
+
+
+#login-form input {
+	font-size: 14px;
+	border: 1px solid #dcdcdc;
+	padding: 12px 10px;
+	width: 380px;
+	margin: auto;
+}
+
+
+
+#login-form input[type="submit"] {
+	background: #1dabb8;
+	border-radius: 3px;
+	color: #fff;
+	width: 320px;
+	font-weight: bold;
+	margin-top: 20px;
+	padding: 12px 20px;
+}
+
+#login-form input[type="submit"]:hover { background: #198d98; }
+
+
+
+#inp_form{
+    width: 200px;
+    height: 30px;
+    background-color: aqua;
+    border: none;
+}
+
+/*
+#error{
+    color: red;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+
+body{
+    width: 100%;
+    background: url(../img/Noise.png);
+    margin: 0;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+a{text-decoration: none;}
+ul{margin: 0; padding: 0; list-style: none;}
+
+.wriper{
+    width: 840px;
+    height: 1230px;
+    margin: 0 auto;
+    padding:0 150px;
+    border-top: 5px solid #7e7e7e;
+    
+}
+/*            СТИЛИ ДЛЯ TOP*/
+
+.top{
+    padding: 30px 0 20px 0;
+}
+
+.search{
+    float: right;
+}
+
+.search input[type="submit"]{
+    margin: 0;
+    width:40px;
+    height:30px;
+    background: #29c5e6;
+    color: #fff;
+    border: 0;
+}
+
+.search input[type="text"]{
+    margin: 0;
+    padding-left: 10px;
+    width: 160px;
+    height: 28px;
+    background: #f3f3f3;
+    color: #b2b2b2;
+    border: 1px solid #e7e7e7;
+}
+/*            меню */
+.menu{
+    width: 840px;
+    height: 40px;
+    text-align: center;
+    background: #f3f3f3;
+    border: 1px solid #cccccc;
+}
+
+.menu li{
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+}
+
+.menu a{
+    width: 116px;
+    height: 31px;
+    color: #b2b2b2;
+    display:inline-block;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+/*анимация меню*/
+.menu a:hover{
+    background: #29c5e6;
+    color: #ffffff;
+}
+
+/*            БАНЕР*/
+
+.banner {
+    width: 840px;
+    height: 280px;
+    background: #e2e2e2;
+    margin-top: 40px;
+    
+}
+
+.banner p{margin: 0;}
+
+.banner #text_1 {
+    color: #5a5a5a;
+    font-size: 35px;
+    text-transform: uppercase;
+    padding:40px 0 0 40px;
+}
+
+.banner #text_2{
+    font-size: 18px;
+    color: #bebebe;
+    padding-left: 40px;
+}
+
+/*        навигация*/
+
+.banner_navigation {
+    width: 840px;
+    height: 50px;
+    background: #f3f3f3; 
+}
+
+.banner_navigation ol{
+/*    list-style-type: */
+}
+
+.banner_navigation li{
+    display: inline-block;
+    width: 197px;
+    height: 50px;
+}
+
+
+.banner_navigation a{
+    
+    color: #8f8f8f;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+/*            анимация навигации*/
+
+.banner_navigation a:hover{color: #29c5e6;} 
+
+
+/*            блок main*/
+
+.main{
+    padding-top: 30px;
+}
+/*            первый блок*/
+.about_us{
+    width: 410px;
+    float: left;
+    color: #bebebe;
+}
+
+.about_us p{font-size: 13px; text-align: justify;}
+.about_us span{text-transform: uppercase; color: #8f8f8f; font-size: 18px;}
+.about_us a{ color: #484646; }
+.about_us a:hover{border-bottom: 2px solid #b4b4b4;}
+
+.about_us img[alt="qub"]{
+    float: left;
+    margin-right: 10px;
+    margin: 10px;
+}
+.about_us img[alt="square"]{
+    margin-right: 10px;
+}
+/*             второй блок*/
+
+.ceo_word img[alt="qub"]{
+    float: left;
+    margin: 10px;
+}
+
+.ceo_word img[alt="square"]{
+    margin:0 10px 0 10px;;
+}
+
+.ceo_word span{
+    text-transform: uppercase;
+    color: #8f8f8f;
+    font-size: 18px;
+}
+.ceo_word alockquote{font-size: 13px; color: #bebebe; text-align: justify;}
+.ceo_word a{color: #484646;}
+.ceo_word a:hover{border-bottom: 2px solid #b4b4b4;}
+
+/*            третий блок*/
+
+.services{
+    margin-top: 30px;
+    padding: 0;
+    width:280px;
+    float: left;
+}
+
+.services span{
+    text-transform: uppercase;
+    color: #8f8f8f;
+}
+
+.services p{
+    font-size:14px;
+    margin: 0;
+    color: #bebebe;
+    text-align: justify;
+    padding-right: 17px;
+    margin:5px 0 10px 0;
+}
+
+.services a{color: #484646;}
+.services a:hover{border-bottom: 2px solid #b4b4b4;}
+/*                четвертый блок*/
+
+.our_teams{
+    margin-top: 30px;
+    padding: 0;
+    width:280px;
+    float:left;
+}
+
+.our_teams #our{
+    text-transform: uppercase;
+    color: #8f8f8f;
+}
+
+.our_teams .qub{
+    width:280px;
+    height: 40px;
+    margin: 10px 0 10px 0;
+}
+
+.our_teams .qub span{
+    width: 220px;
+    height: 50px;
+    float: right;
+}
+
+.our_teams img[alt="qub"]{
+    width:40px;
+    height:40px;
+    margin:0px 10px 10px 10px;
+ 
+}
+
+.our_teams p{
+    font-size:12px;
+    margin: 0;
+    color: #bebebe;
+}
+
+.our_teams .lorem{
+    color: #484646;
+    font-size:14px;
+    text-transform: uppercase;
+}
+
+/*            пятый блок*/
+
+.support{
+    margin-top: 30px;
+    padding: 0;
+    width:280px;
+    float:left;
+}
+
+.support span{
+    text-transform: uppercase;
+    color: #8f8f8f;
+}
+
+.support p{
+    font-size:14px;
+    margin: 0;
+    color: #bebebe;
+    text-align: justify;
+    padding-right: 17px;
+    margin:5px 0 10px 0;
+}
+
+.support a{color: #484646;}
+.support a:hover{border-bottom: 2px solid #b4b4b4;}
+
+/*            FOOTER*/
+
+.footer{
+    width: 840px;
+    height: 110px;
+    background: #7e7e7e;
+    margin: 0 auto;
+    padding: 10px 150px 10px 150px ;
+    color: #dbdbdb;
+}
+
+/*            twittwr feed*/
+
+.footer .twitter_f{
+    width: 250px;
+    height: 100%;
+    float: left;
+    margin-right: 20px;
+}
+
+.twitter_f a{
+    width: 250px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+.twitter_f div{width: 250px; border-bottom: 1px solid #bebebe;}
+.twitter_f span{
+    color: #dbdbdb;
+    padding-right: 10px;
+}
+.twitter_f span:hover{color: #bebebe; border-bottom: 1px solid #bebebe;}
+
+.twitter_f p{
+    margin: 2px;
+    padding-left: 10px;
+}
+
+/*                sitemap*/
+
+.sitemap{
+   width: 150px;
+    display: inline-block;
+}
+.sitemap .sitem_p{
+    
+    border-bottom: 1px solid #bebebe;
+}
+.sitemap .sitem_p span{color: #fff; text-transform: uppercase;}
+
+.list_1 {
+    float: left;
+    margin-right: 20px;
+}
+.list_1 li {padding-top: 10px;}
+.list_1 a {color: #dbdbdb;}
+.list_1 a:hover{border-bottom: 1px solid #bebebe;}
+
+.list_2 li{padding-top: 10px;}
+.list_2 a {color: #dbdbdb;}
+.list_2 a:hover{border-bottom: 1px solid #bebebe;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
