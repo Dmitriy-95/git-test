@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>leson 13</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   
+   <div class="modal fade" id="image-modal" role="dialog">
+       <div class="modal-dialog modal-lg">
+           <div class="content" style="background:#f1f1f1; border-radius:10px;">
+              
+               <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal" aria-lebel="Close">
+                       <span aria-hidden="true">x</span>
+                   </button>
+                   <div class="modal-title">просмотр изображения</div>
+               </div>
+               <div class="modal-body">
+                   <img src="" alt="" class="img-responsive center-block">
+                   <h1>Заголовок</h1>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos architecto delectus quasi explicabo laborum nesciunt, possimus, quod velit est perspiciatis earum eius, officia dicta temporibus odio modi aspernatur sequi. Minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt adipisci, amet saepe ullam! Repellat dignissimos delectus, velit! Saepe quis ratione inventore cum. Ipsa qui accusantium illo ipsum tempore reiciendis saepe.</p>
+               </div>
+               <div class="modal-footer">
+                   <button type="button" class="btn btn-default" data-dismiss="modal" style="background:#2b4276; color:#f1f1f1;">
+                       <span class="glyphicon glyphicon-thumbs-up" ></span>
+                   </button>
+                   <button type="button" class="btn btn-default" data-dismiss="modal" style="background:#2b4276; color:#f1f1f1">
+                       <span class="glyphicon glyphicon-thumbs-down"></span>
+                   </button>
+               </div>
+               
+           </div>
+       </div>
+   </div>
+   
+    <div class="row">
+<!--        изоброжение галиреи 1-->
+   
+       <div class="col-sm-6 col-md-4 col-lg-3">
+           <a href="#" class="thumbnail"><img src="img/image01-800x600-.jpg" alt="feeshe"></a>
+       </div>
+       
+        <div class="col-sm-6 col-md-4 col-lg-3">
+           <a href="#" class="thumbnail"><img src="img/image02-800x600-.jpg" alt="feeshe"></a>
+       </div>
+       
+        <div class="col-sm-6 col-md-4 col-lg-3">
+           <a href="#" class="thumbnail"><img src="img/image03-800x600-.jpg" alt="feeshe"></a>
+       </div>
+       
+        <div class="col-sm-6 col-md-4 col-lg-3">
+           <a href="#" class="thumbnail"><img src="img/image04-800x600-.jpg" alt="feeshe"></a>
+       </div>
+       
+        <div class="col-sm-6 col-md-4 col-lg-3">
+           <a href="#" class="thumbnail"><img src="img/image05-800x600-.jpg" alt="feeshe"></a>
+       </div>
+       
+        <div class="col-sm-6 col-md-4 col-lg-3">
+           <a href="#" class="thumbnail"><img src="img/image06-800x600-.jpg" alt="feeshe"></a>
+       </div>
+       
+        <div class="col-sm-6 col-md-4 col-lg-3">
+           <a href="#" class="thumbnail"><img src="img/image07-800x600-.jpg" alt="feeshe"></a>
+       </div>
+       
+        <div class="col-sm-6 col-md-4 col-lg-3">
+           <a href="#" class="thumbnail"><img src="img/image08-800x600-.jpg" alt="feeshe"></a>
+       </div>
+       
+        <div class="col-sm-6 col-md-4 col-lg-3">
+           <a href="#" class="thumbnail"><img src="img/image09-800x600-.jpg" alt="feeshe"></a>
+       </div>
+       
+        <div class="col-sm-6 col-md-4 col-lg-3">
+           <a href="#" class="thumbnail"><img src="img/image10-800x600-.jpg" alt="feeshe"></a>
+       </div>
+       
+        <div class="col-sm-6 col-md-4 col-lg-3">
+           <a href="#" class="thumbnail"><img src="img/image11-800x600-.jpg" alt="feeshe"></a>
+       </div>
+       
+        <div class="col-sm-6 col-md-4 col-lg-3">
+           <a href="#" class="thumbnail"><img src="img/image12-800x600-.jpg" alt="feeshe"></a>
+       </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+        // После загрузки DOM-дерева (страницы)
+        $(function() {     
+          //при нажатии на ссылку, содержащую Thumbnail
+          $('a.thumbnail').click(function(e) {
+            //отменить стандартное действие браузера
+            e.preventDefault();
+            //присвоить атрибуту scr элемента img модального окна
+            //значение атрибута scr изображения, которое обёрнуто
+            //вокруг элемента a, на который нажал пользователь
+            $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));
+            //открыть модальное окно
+            $("#image-modal").modal('show');
+          });
+          //при нажатию на изображение внутри модального окна 
+          //закрыть его
+          $('#image-modal .modal-body img').on('click', function() {
+            $("#image-modal").modal('hide')
+          });
+        });
+    </script>
+  </body>
+</html>
