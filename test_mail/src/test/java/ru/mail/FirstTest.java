@@ -10,7 +10,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class FirstTest {
-
     public static ChromeDriver driver;
 
     @Before
@@ -21,30 +20,27 @@ public class FirstTest {
     }
 
     @Test
-    public void firstTest(){
+    public void firstTest() throws InterruptedException {
+//        my_firsttest
+//        qwerty12345
         String title = driver.getTitle();
         Assert.assertTrue(title.equals("Mail.Ru: почта, поиск в интернете, новости, игры"));
 
-        WebElement setLogin = driver.findElement(By.id("mailbox:login"));
-        setLogin.sendKeys("my_firsttest");
-        WebElement setPassword = driver.findElement(By.id("mailbox:password"));
-        setPassword.sendKeys("qwerty12345");
-        WebElement buttonInput = driver.findElement(By.id("mailbox:submit"));
-        buttonInput.click();
-//        WebElement controlJump = driver.findElement(By.id("PH_user-email"));
-//        String mailUser = controlJump.getText();
-//        System.out.println(mailUser);
-//        Assert.assertTrue(mailUser.equals("my_firsttest@mail.ru"));
-
-        WebElement openPost = driver.findElement(By.id("ph_mail"));
-        openPost.click();
-
-        WebElement messNew = driver.findElement(By.cssSelector("#Lxs9a76 > div > div > div.b-toolbar__group.b-toolbar__group_left > div > a"));
-        messNew.click();
+        HomePage homePage = new HomePage(driver);
+        homePage.setInputEmail("my_firsttest");
+        homePage.setInputPassword("qwerty12345");
+        homePage.setButtonSubmit();
 
 
-//        WebElement recipMassege = driver.findElement(By.cssSelector(".js-input compose__labels__input"));
-//        recipMassege.sendKeys("argunovdima@bk.ru");
+
+        PostPege postPege = new PostPege(driver);
+        postPege.clickWritePost();
+
+        WritePostPage writePostPage = new WritePostPage(driver);
+        writePostPage.setEmailOfUser("argunovdima@bk.ru");
+        writePostPage.setSubjectInput("my first autotest");
+        writePostPage.setBodyInput("пробный запуск теста");
+        writePostPage.clicSubmitSent();
     }
 
     @After
