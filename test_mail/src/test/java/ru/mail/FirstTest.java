@@ -31,7 +31,7 @@ public class FirstTest {
         homePage.setInputPassword("qwerty12345");
         homePage.setButtonSubmit();
 
-
+        Thread.sleep(5000);
 
         PostPege postPege = new PostPege(driver);
         postPege.clickWritePost();
@@ -39,8 +39,15 @@ public class FirstTest {
         WritePostPage writePostPage = new WritePostPage(driver);
         writePostPage.setEmailOfUser("argunovdima@bk.ru");
         writePostPage.setSubjectInput("my first autotest");
-        writePostPage.setBodyInput("пробный запуск теста");
+//        writePostPage.clickBodyInput();
+//        writePostPage.setBodyInput("пробный запуск теста");
         writePostPage.clicSubmitSent();
+
+//        if (writePostPage.text.equals("Вы уверены?")){
+//            writePostPage.clickButtonFray();
+//        }
+        Thread.sleep(1000);
+        writePostPage.clickButtonFray();
     }
 
     @After
